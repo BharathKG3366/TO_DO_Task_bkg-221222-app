@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+  }
+  body {
+    background-image: url('assets/backimg.jpg'); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+  .container {
+    width: 90%;
+    max-width: 34em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+  #new-task {
+    position: relative;
+    background: rgba(234, 145, 145, 0.2); 
+    backdrop-filter: blur(10px);
+    padding: 1.8em 1.25em;
+    border-radius: 0.3em;
+    box-shadow: 0 1.25em 1.8em rgba(1, 24, 48, 0.15);
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1em;
+  }
+  #new-task input {
+    font-family: "Poppins", sans-serif;
+    font-size: 1em;
+    border: none;
+    border-bottom: 4px solid #f0a798;
+    padding: 0.8em 0.5em;
+    color: #111111;
+    font-weight: 500;
+  }
+  #new-task input:focus {
+    outline: none;
+    border-color: #0bf875;
+  }
+  #new-task button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    background-color: #0b87ff;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    border-radius: 0.3em;
+    cursor: pointer;
+  }
+
+  #new-task button:hover {
+    background-color: #0adf43;
+    color: #fb3b3b;
+    
+  }
+
+  #tasks {
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px);
+    position: relative;
+    padding: 1.8em 1.25em;
+    margin-top: 3.8em;
+    width: 100%;
+    box-shadow: 0 1.25em 1.8em rgba(1, 24, 48, 0.15);
+    border-radius: 0.6em;
+  }
+  .task {
+    background: rgba(167, 215, 231, 0.2); 
+    backdrop-filter: blur(8px);
+    padding: 0.3em 0.6em;
+    margin-top: 0.6em;
+    display: flex;
+    align-items: center;
+    border-bottom: 4px solid #7abcdd;
+    cursor: pointer;
+  }
+
+  .task:hover {
+    outline: none;
+    border-color: #caf106;
+  }
+
+  .task span {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9em;
+    font-weight: 400;
+  }
+  .task button {
+    color: #ffffff;
+    padding: 0.8em 0;
+    width: 2.8em;
+    border-radius: 0.3em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .delete {
+    background-color: #f38787;
+  }
+  .edit {
+    background-color: #e275bc;
+    margin-left: auto;
+    margin-right: 3em;
+  }
+.delete:hover{
+    background-color: #ec330f;
+}
+
+.edit:hover{
+    background-color: #98056c;
+}
+
+  .completed {
+    text-decoration: line-through;
+  }
+
